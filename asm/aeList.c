@@ -59,7 +59,8 @@ aeListSetItem(aeList list, size_t index, void *item) {
 
 aeList
 aeListCut(aeList list, size_t begin, size_t end) {
-    aeAssert(begin >= 0 && end < list->length, "aeListCut: cut out of range");
+//    aeLog("长度=(%d)\n", list->length);
+    aeAssert(begin >= 0 && end <= list->length, "aeListCut: cut out of range");
     aeList output = aeListNew();
     size_t i;
     for (i = begin; i < end; i += 1) {

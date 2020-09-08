@@ -45,4 +45,10 @@ utilLogUnsignedList(aeList list);
 // 根据c数组 得到list
 aeList
 utilGetListByCArray(int *data, int len);
+
+// 根据个数生成list, 初始值为0
+aeList
+utilGetListByLen(size_t len);
+
+
 #endif /* utils_h */

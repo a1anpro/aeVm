@@ -68,3 +68,13 @@ utilGetListByCArray(int *data, int len) {
     }
     return expected;
 }
+
+aeList
+utilGetListByLen(size_t len) {
+    aeList output = aeListNew();
+    int i;
+    for (i = 0; i < len; ++i) {
+        aeListAdd(output, 0);
+    }
+    return output;
+}

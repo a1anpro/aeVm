@@ -7,6 +7,18 @@
 #include "vm.h"
 #include "aeUtils.h"
 
-void vmTest();
+void 
+vmTest();
 
+aeList 
+vmTestDraw();
+
+void 
+vmTestSetAdd();
+
+void 
+vmTestLoadSave();
+
+void 
+vmTestCompare();
 #endif /* vmTest_h */

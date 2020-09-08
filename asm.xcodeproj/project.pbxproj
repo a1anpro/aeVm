@@ -8,23 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		2B3C651024FEA5E200082FFF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C650F24FEA5E200082FFF /* main.c */; };
+		2B3C651824FEAD3B00082FFF /* auto_test.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2B3C651624FEAD3B00082FFF /* auto_test.py */; };
+		2B3C651C24FEC3C100082FFF /* aeUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C651B24FEC3C100082FFF /* aeUtils.c */; };
+		2B3C651F24FEC48400082FFF /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C651E24FEC48400082FFF /* test.c */; };
+		2B3C652224FF59C700082FFF /* asm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C652124FF59C700082FFF /* asm.c */; };
+		2B3C652825009B1000082FFF /* aeList.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C652725009B1000082FFF /* aeList.c */; };
+		2B3C652E250121FA00082FFF /* aeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C652D250121FA00082FFF /* aeMap.c */; };
+		2B3C653425069F0200082FFF /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C653325069F0200082FFF /* vm.c */; };
+		2B3C65372506A1C600082FFF /* vmTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B3C65362506A1C600082FFF /* vmTest.c */; };
+		C145F4E624FFD26C00A55F1D /* aeString.c in Sources */ = {isa = PBXBuildFile; fileRef = C145F4E524FFD26C00A55F1D /* aeString.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		2B3C650A24FEA5E200082FFF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = usr/share/man/man1;
+			dstSubfolderSpec = 16;
 			files = (
+				2B3C651824FEAD3B00082FFF /* auto_test.py in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B3C650C24FEA5E200082FFF /* asm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = asm; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3C650F24FEA5E200082FFF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		2B3C651624FEAD3B00082FFF /* auto_test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = auto_test.py; sourceTree = "<group>"; };
+		2B3C651A24FEC3C100082FFF /* aeUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aeUtils.h; sourceTree = "<group>"; };
+		2B3C651B24FEC3C100082FFF /* aeUtils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aeUtils.c; sourceTree = "<group>"; };
+		2B3C651D24FEC48400082FFF /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		2B3C651E24FEC48400082FFF /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		2B3C652024FF59C700082FFF /* asm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = asm.h; sourceTree = "<group>"; };
+		2B3C652124FF59C700082FFF /* asm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asm.c; sourceTree = "<group>"; };
+		2B3C652625009B1000082FFF /* aeList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aeList.h; sourceTree = "<group>"; };
+		2B3C652725009B1000082FFF /* aeList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aeList.c; sourceTree = "<group>"; };
+		2B3C652C250121FA00082FFF /* aeMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aeMap.h; sourceTree = "<group>"; };
+		2B3C652D250121FA00082FFF /* aeMap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aeMap.c; sourceTree = "<group>"; };
+		2B3C653225069F0200082FFF /* vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vm.h; sourceTree = "<group>"; };
+		2B3C653325069F0200082FFF /* vm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
+		2B3C65352506A1C600082FFF /* vmTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vmTest.h; sourceTree = "<group>"; };
+		2B3C65362506A1C600082FFF /* vmTest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmTest.c; sourceTree = "<group>"; };
+		C145F4E424FFD26C00A55F1D /* aeString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aeString.h; sourceTree = "<group>"; };
+		C145F4E524FFD26C00A55F1D /* aeString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aeString.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +84,24 @@
 		2B3C650E24FEA5E200082FFF /* asm */ = {
 			isa = PBXGroup;
 			children = (
+				2B3C652725009B1000082FFF /* aeList.c */,
+				2B3C652625009B1000082FFF /* aeList.h */,
+				2B3C652D250121FA00082FFF /* aeMap.c */,
+				2B3C652C250121FA00082FFF /* aeMap.h */,
+				C145F4E524FFD26C00A55F1D /* aeString.c */,
+				C145F4E424FFD26C00A55F1D /* aeString.h */,
+				2B3C652124FF59C700082FFF /* asm.c */,
+				2B3C652024FF59C700082FFF /* asm.h */,
+				2B3C651624FEAD3B00082FFF /* auto_test.py */,
 				2B3C650F24FEA5E200082FFF /* main.c */,
+				2B3C653225069F0200082FFF /* vm.h */,
+				2B3C653325069F0200082FFF /* vm.c */,
+				2B3C651E24FEC48400082FFF /* test.c */,
+				2B3C651D24FEC48400082FFF /* test.h */,
+				2B3C65352506A1C600082FFF /* vmTest.h */,
+				2B3C65362506A1C600082FFF /* vmTest.c */,
+				2B3C651B24FEC3C100082FFF /* aeUtils.c */,
+				2B3C651A24FEC3C100082FFF /* aeUtils.h */,
 			);
 			path = asm;
 			sourceTree = "<group>";
@@ -118,7 +162,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3C653425069F0200082FFF /* vm.c in Sources */,
+				C145F4E624FFD26C00A55F1D /* aeString.c in Sources */,
+				2B3C652825009B1000082FFF /* aeList.c in Sources */,
+				2B3C651F24FEC48400082FFF /* test.c in Sources */,
+				2B3C65372506A1C600082FFF /* vmTest.c in Sources */,
 				2B3C651024FEA5E200082FFF /* main.c in Sources */,
+				2B3C652E250121FA00082FFF /* aeMap.c in Sources */,
+				2B3C651C24FEC3C100082FFF /* aeUtils.c in Sources */,
+				2B3C652224FF59C700082FFF /* asm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

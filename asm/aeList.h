@@ -32,5 +32,7 @@ aeListCut(aeList list, size_t begin, size_t end);
 bool
 aeListEqual(aeList l1, aeList l2);
 
+aeList
+aeListConcat(aeList l1, aeList l2);
 
 #endif /* aeList_h */

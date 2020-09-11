@@ -17,10 +17,17 @@ utilApartData(int data) {
     aeList output = aeListNew();
     // 将data分成高8位和低8位
     unsigned char low = data & 0xff;
-    unsigned char high = data >> 8 & 0xff;
+    unsigned char high = (data >> 8) & 0xff;
     aeListAdd(output, low);
     aeListAdd(output, high);
     return output;
+}
+
+// 把low和high组成16位
+int
+utilCombineData(unsigned char low, unsigned char high) {
+    int data = data = low + (high << 8);
+    return data;
 }
 
 // 输出string的list
@@ -77,4 +84,19 @@ utilGetListByLen(size_t len) {
         aeListAdd(output, 0);
     }
     return output;
+}
+
+void
+utilFillList(aeList list, size_t size) {
+    // 后面补充0
+    size_t len = aeListLength(list);
+    
+    if (size < len) {
+        return ;
+    }
+    size_t newLen = size - len;
+    int i;
+    for (i = 0; i < newLen; ++i) {
+        aeListAdd(list, 0);
+    }
 }

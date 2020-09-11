@@ -28,6 +28,10 @@ ensure(bool condition, const char *msg);
 aeList
 utilApartData(int data);
 
+// 把low和high组成16位
+int
+utilCombineData(unsigned char low, unsigned char high);
+
 // 还没写
 void
 splitToTokens(char sourceCode[], char asmCode[][15]);
@@ -50,5 +54,7 @@ utilGetListByCArray(int *data, int len);
 aeList
 utilGetListByLen(size_t len);
 
+void
+utilFillList(aeList list, size_t size);
 
 #endif /* utils_h */

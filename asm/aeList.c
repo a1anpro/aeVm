@@ -85,3 +85,13 @@ aeListEqual(aeList l1, aeList l2) {
     }
     return TRUE;
 }
+
+aeList
+aeListConcat(aeList l1, aeList l2) {
+    size_t i;
+    size_t len = aeListLength(l2);
+    for (i = 0; i < len; ++i) {
+        aeListAdd(l1, aeListGetItem(l2, i));
+    }
+    return l1;
+}

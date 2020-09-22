@@ -104,23 +104,20 @@ aeString
 aeStringSlice(aeString s, size_t begin, size_t end) {
     size_t len = s->length;
     aeAssert(begin >= 0 && end <= len, "aeStringSlice: slice out of range");
-    const char* str = s->raw;
-    
-    if (end  == -1) {
-        end = len;
-    }
-    char* result = (char*) malloc(end - begin);
+    const char *str = s->raw;
+
+    char *result = (char *)malloc(end - begin + 1);
     int i;
     for (i = 0; i < end - begin; ++i) {
         result[i] = str[i + begin];
     }
     result[end - begin] = '\0';
-    
+
     aeString res = malloc(sizeof(struct _aeString));
     size_t length = end - begin;
     res->length = length;
     res->raw = result;
-    
+
     return res;
 }
 

@@ -94,9 +94,9 @@ vmTestDraw() {
     axeVm vm = axeVmNew();
     aeList machineCode = utilGetListByCArray(mcode, sizeof(mcode)/sizeof(int));
     runVm(vm, machineCode);
-
+    
+    // 显存
     aeList mem = axeVmSliceMemory(vm, 0, 256);
-    utilLogUnsignedList(mem);
     return mem;
 }
 
